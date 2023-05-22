@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "so-reg-parser"
+version = "0.1.0"
+description = ""
+authors = ["jeff modell"]
+readme = "README.md"
+packages = [{include = "so_reg_parser"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+pandas = "^2.0.1"
+xlrd = "^2.0.1"
+openpyxl = "^3.1.2"
+requests = "^2.30.0"
+httpx = "^0.24.1"
+rich = "^13.3.5"
+pywin32 = "^306"
+pywin32-ctypes = "^0.2.0"
+cffi = "^1.15.1"
+pyinstaller = "^5.11.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
